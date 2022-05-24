@@ -30,6 +30,6 @@ class BandDetailsEntityTest {
 
     @Test( expected = MalformedURLException::class)
     fun `wrong url`() {
-        BandDetailsEntity(ID, NAME, GENRE, DESCRIPTION, YEAR, KO_URL, ALBUMS).toBandDetails()
+        +BandDetailsEntity(ID, NAME, GENRE, DESCRIPTION, YEAR, KO_URL, ALBUMS).toBandDetails()
     }
 }
